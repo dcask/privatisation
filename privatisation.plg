@@ -1,0 +1,204 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: privatisation - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\KURINS~1\AppData\Local\Temp\RSP10F1.tmp" with contents
+[
+/nologo /MT /W3 /GR /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Programming\MyProjects\privatisation\ChildFrm.cpp"
+"D:\Programming\MyProjects\privatisation\DocData.cpp"
+"D:\Programming\MyProjects\privatisation\FAddress.cpp"
+"D:\Programming\MyProjects\privatisation\FAFilter.cpp"
+"D:\Programming\MyProjects\privatisation\FBalanceHolder.cpp"
+"D:\Programming\MyProjects\privatisation\FBaseInfo.cpp"
+"D:\Programming\MyProjects\privatisation\FCalendar.cpp"
+"D:\Programming\MyProjects\privatisation\FChildDialog.cpp"
+"D:\Programming\MyProjects\privatisation\FContract.cpp"
+"D:\Programming\MyProjects\privatisation\FContractInfo.cpp"
+"D:\Programming\MyProjects\privatisation\FDeclare.cpp"
+"D:\Programming\MyProjects\privatisation\FLogin.cpp"
+"D:\Programming\MyProjects\privatisation\FNewAddress.cpp"
+"D:\Programming\MyProjects\privatisation\FPeriod.cpp"
+"D:\Programming\MyProjects\privatisation\FPeriodBH.cpp"
+"D:\Programming\MyProjects\privatisation\FPeriodDistrict.cpp"
+"D:\Programming\MyProjects\privatisation\FReplica.cpp"
+"D:\Programming\MyProjects\privatisation\FRepList.cpp"
+"D:\Programming\MyProjects\privatisation\FSearch.cpp"
+"D:\Programming\MyProjects\privatisation\FUserSetup.cpp"
+"D:\Programming\MyProjects\privatisation\FWarrant.cpp"
+"D:\Programming\MyProjects\privatisation\FWarrantPeople.cpp"
+"D:\Programming\MyProjects\privatisation\FWarrantSetup.cpp"
+"D:\Programming\MyProjects\privatisation\FWarrantWrnt.cpp"
+"D:\Programming\MyProjects\privatisation\MainFrm.cpp"
+"D:\Programming\MyProjects\privatisation\privatisation.cpp"
+"D:\Programming\MyProjects\privatisation\privatisationDoc.cpp"
+"D:\Programming\MyProjects\privatisation\privatisationView.cpp"
+"D:\Programming\MyProjects\privatisation\StrArray.cpp"
+]
+Creating command line "cl.exe @C:\Users\KURINS~1\AppData\Local\Temp\RSP10F1.tmp" 
+Creating temporary file "C:\Users\KURINS~1\AppData\Local\Temp\RSP10F2.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/privatisation.pdb" /machine:I386 /out:"Release/privatisation.exe" 
+.\Release\ado2.obj
+.\Release\BaseTool.obj
+.\Release\ChildFrm.obj
+.\Release\DocData.obj
+.\Release\excel.obj
+.\Release\FAddress.obj
+.\Release\FAFilter.obj
+.\Release\FBalanceHolder.obj
+.\Release\FBaseInfo.obj
+.\Release\FCalendar.obj
+.\Release\FChildDialog.obj
+.\Release\FContract.obj
+.\Release\FContractInfo.obj
+.\Release\FDeclare.obj
+.\Release\FLogin.obj
+.\Release\FNewAddress.obj
+.\Release\FPeriod.obj
+.\Release\FPeriodBH.obj
+.\Release\FPeriodDistrict.obj
+.\Release\FReplica.obj
+.\Release\FRepList.obj
+.\Release\FSearch.obj
+.\Release\FUserSetup.obj
+.\Release\FWarrant.obj
+.\Release\FWarrantPeople.obj
+.\Release\FWarrantSetup.obj
+.\Release\FWarrantWrnt.obj
+.\Release\MainFrm.obj
+.\Release\mshflexgrid.obj
+.\Release\msmask.obj
+.\Release\msword.obj
+.\Release\picture.obj
+.\Release\privatisation.obj
+.\Release\privatisationDoc.obj
+.\Release\privatisationView.obj
+.\Release\recordset.obj
+.\Release\Splash.obj
+.\Release\StdAfx.obj
+.\Release\StrArray.obj
+.\Release\privatisation.res
+]
+Creating command line "link.exe @C:\Users\KURINS~1\AppData\Local\Temp\RSP10F2.tmp"
+<h3>Output Window</h3>
+Compiling...
+ChildFrm.cpp
+DocData.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FAddress.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FAFilter.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FBalanceHolder.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FBaseInfo.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FCalendar.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FChildDialog.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FContract.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FContractInfo.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FDeclare.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FLogin.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FNewAddress.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FPeriod.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FPeriodBH.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FPeriodDistrict.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FReplica.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FRepList.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FSearch.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FUserSetup.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+Generating Code...
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+Compiling...
+FWarrant.cpp
+FWarrantPeople.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FWarrantSetup.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+FWarrantWrnt.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+MainFrm.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+privatisation.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+privatisationDoc.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+privatisationView.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+StrArray.cpp
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+Generating Code...
+Make sure you go to Tools.Options.Directories.Library files and add the paths to msado15.dll and msjro.dll will usually be in C:\Program Files\Common Files\System\ado
+Linking...
+Creating temporary file "C:\Users\KURINS~1\AppData\Local\Temp\RSPBA1D.tmp" with contents
+[
+/nologo /o"Release/privatisation.bsc" 
+.\Release\StdAfx.sbr
+.\Release\ado2.sbr
+.\Release\BaseTool.sbr
+.\Release\ChildFrm.sbr
+.\Release\DocData.sbr
+.\Release\excel.sbr
+.\Release\FAddress.sbr
+.\Release\FAFilter.sbr
+.\Release\FBalanceHolder.sbr
+.\Release\FBaseInfo.sbr
+.\Release\FCalendar.sbr
+.\Release\FChildDialog.sbr
+.\Release\FContract.sbr
+.\Release\FContractInfo.sbr
+.\Release\FDeclare.sbr
+.\Release\FLogin.sbr
+.\Release\FNewAddress.sbr
+.\Release\FPeriod.sbr
+.\Release\FPeriodBH.sbr
+.\Release\FPeriodDistrict.sbr
+.\Release\FReplica.sbr
+.\Release\FRepList.sbr
+.\Release\FSearch.sbr
+.\Release\FUserSetup.sbr
+.\Release\FWarrant.sbr
+.\Release\FWarrantPeople.sbr
+.\Release\FWarrantSetup.sbr
+.\Release\FWarrantWrnt.sbr
+.\Release\MainFrm.sbr
+.\Release\mshflexgrid.sbr
+.\Release\msmask.sbr
+.\Release\msword.sbr
+.\Release\picture.sbr
+.\Release\privatisation.sbr
+.\Release\privatisationDoc.sbr
+.\Release\privatisationView.sbr
+.\Release\recordset.sbr
+.\Release\Splash.sbr
+.\Release\StrArray.sbr]
+Creating command line "bscmake.exe @C:\Users\KURINS~1\AppData\Local\Temp\RSPBA1D.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+privatisation.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

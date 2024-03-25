@@ -1,0 +1,1546 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\privatisation.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\privatisation.ico"
+IDR_PRIVATTYPE          ICON    DISCARDABLE     "res\\privatisationDoc.ico"
+IDI_SAVE                ICON    DISCARDABLE     "res\\save.ico"
+IDI_LAST                ICON    DISCARDABLE     "res\\last.ico"
+IDI_FIND                ICON    DISCARDABLE     "res\\find.ico"
+IDI_CLOSEALL            ICON    DISCARDABLE     "res\\closeall.ico"
+IDI_CLOSEALLD           ICON    DISCARDABLE     "res\\closealld.ico"
+IDI_CALENDAR            ICON    DISCARDABLE     "res\\calendar.ico"
+IDI_CLOSE               ICON    DISCARDABLE     "res\\close.ico"
+IDI_DELETE              ICON    DISCARDABLE     "res\\delete.ico"
+IDI_ADDRESS             ICON    DISCARDABLE     "res\\address.ico"
+IDI_ADD                 ICON    DISCARDABLE     "res\\add.ico"
+IDI_REMOVE              ICON    DISCARDABLE     "res\\remove.ico"
+IDI_ROOT                ICON    DISCARDABLE     "res\\root.ico"
+IDI_CURRENT             ICON    DISCARDABLE     "res\\current.ico"
+IDI_BIND                ICON    DISCARDABLE     "res\\bind.ico"
+IDI_CONTRACT            ICON    DISCARDABLE     "res\\contract.ico"
+IDI_DECLARE             ICON    DISCARDABLE     "res\\declare.ico"
+IDI_WARRANT             ICON    DISCARDABLE     "res\\warrant.ico"
+IDI_REPLICA             ICON    DISCARDABLE     "res\\replica.ico"
+IDI_PERSONS             ICON    DISCARDABLE     "res\\persons.ico"
+IDI_W_SETUP             ICON    DISCARDABLE     "res\\setup.ico"
+IDI_W_WRNT              ICON    DISCARDABLE     "res\\wrnt.ico"
+IDI_P_ADD               ICON    DISCARDABLE     "res\\p_add.ico"
+IDI_P_REMOVE            ICON    DISCARDABLE     "res\\p_remove.ico"
+IDI_SEARCH              ICON    DISCARDABLE     "res\\search.ico"
+IDI_OWNER               ICON    DISCARDABLE     "res\\owner.ico"
+IDI_NOTOWNER            ICON    DISCARDABLE     "res\\notowner.ico"
+IDI_LOCK                ICON    DISCARDABLE     "res\\lock.ico"
+IDI_FOLDER              ICON    DISCARDABLE     "res\\folder.ico"
+IDI_POST                ICON    DISCARDABLE     "res\\post.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Записи"
+    BEGIN
+        MENUITEM "&Найти договор..\tF5",        ID_RECORD_FIND
+        MENUITEM "Новый &адрес..\tF10",         ID_RECORD_ADDRESS
+        MENUITEM SEPARATOR
+        MENUITEM "Выход",                       ID_APP_EXIT
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "&Панель инструментов",        ID_VIEW_TOOLBAR
+        MENUITEM "&Строка состояния",           ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Списки"
+    BEGIN
+        MENUITEM "Сведения",                    ID_LIST_INFO
+        MENUITEM "Отчёт",                       ID_LIST_REPORT
+        MENUITEM "Отчёт (Департамент)",         ID_LIST_REPORT_DEP
+        MENUITEM "Справка",                     ID_LIST_INJURY
+        MENUITEM "Справка по площадям",         ID_LIST_INJURY_SQR
+        MENUITEM "Справка по заключению",       ID_LIST_CONCLUSION
+        MENUITEM "Расторжение договоров",       ID_LIST_CANCEL
+        MENUITEM "Расторжение (Департамент)",   ID_LIST_CANCEL_DEP
+        MENUITEM "Заключение договоров",        ID_LIST_SIGNED
+        MENUITEM "Заключение (Департамент)",    ID_LIST_SIGNED_DEP
+        MENUITEM "Список в налоговую",          ID_LIST_TAX
+        MENUITEM "Приватизация по типам квартир", ID_LIST_FLATTYPE
+    END
+    POPUP "&Настройки"
+    BEGIN
+        MENUITEM "Приложение",                  ID_SETUP_APP
+        MENUITEM "Пользователь",                ID_SETUP_USER
+    END
+    POPUP "&Помощь"
+    BEGIN
+        MENUITEM "О программе..",               ID_APP_ABOUT
+    END
+END
+
+IDR_PRIVATTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "Записи"
+    BEGIN
+        MENUITEM "&Найти договор..\tF5",        ID_RECORD_FIND
+        MENUITEM "Новый &адрес..\tF10",         ID_RECORD_ADDRESS
+        MENUITEM "Выгрузить",                   ID_RECORD_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Выход",                       ID_APP_EXIT
+    END
+    POPUP "Договор"
+    BEGIN
+        MENUITEM "Сохранить",                   ID_CONTRACT_SAVE
+        MENUITEM "Удалить",                     ID_CONTRACT_DELETE
+        MENUITEM "Изменить адрес",              ID_CONTRACT_ADDRESS
+        MENUITEM "Закрыть",                     ID_CONTRACT_CLOSE
+    END
+    POPUP "&Списки"
+    BEGIN
+        MENUITEM "Сведения",                    ID_LIST_INFO
+        MENUITEM "Отчёт",                       ID_LIST_REPORT
+        MENUITEM "Отчёт (Департамент)",         ID_LIST_REPORT_DEP
+        MENUITEM "Справка",                     ID_LIST_INJURY
+        MENUITEM "Справка по площадям",         ID_LIST_INJURY_SQR
+        MENUITEM "Справка по заключению",       ID_LIST_CONCLUSION
+        MENUITEM "Расторжение договоров",       ID_LIST_CANCEL
+        MENUITEM "Расторжение (Департамент)",   ID_LIST_CANCEL_DEP
+        MENUITEM "Заключение договоров",        ID_LIST_SIGNED
+        MENUITEM "Заключение (Департамент)",    ID_LIST_SIGNED_DEP
+        MENUITEM "Список в налоговую",          ID_LIST_TAX
+        MENUITEM "Приватизация по типам квартир", ID_LIST_FLATTYPE
+    END
+    POPUP "Сформировать"
+    BEGIN
+        MENUITEM "Заявление",                   ID_MAKE_DECLARATION
+        MENUITEM "Регистрация собственника",    ID_MAKE_DECLARATION_DEP
+        MENUITEM "Регистрация перехода права",  ID_MAKE_DECLARATION_REG
+        MENUITEM "Договор на приватизацию",     ID_MAKE_CONTRACT
+        MENUITEM "Дубликат",                    ID_MAKE_REPLICA
+        MENUITEM "Справка об участии",          ID_MAKE_INJUIRY
+    END
+    POPUP "&Текст"
+    BEGIN
+        MENUITEM "&Отменить\tCtrl+Z",           ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Вырезать\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "&Копировать\tCtrl+C",         ID_EDIT_COPY
+        MENUITEM "&Вставить\tCtrl+V",           ID_EDIT_PASTE
+    END
+    POPUP "&Настройки"
+    BEGIN
+        MENUITEM "Приложение",                  ID_SETUP_APP
+        MENUITEM "Пользователь",                ID_SETUP_USER
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "&Панель инструментов",        ID_VIEW_TOOLBAR
+        MENUITEM "&Строка состояния",           ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Окна"
+    BEGIN
+        MENUITEM "&Каскад",                     ID_WINDOW_CASCADE
+        MENUITEM "&Мозаика",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "Закрыть все",                 ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Помощь"
+    BEGIN
+        MENUITEM "&О программе",                ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_PRIV_CONTRACT,       VIRTKEY, NOINVERT
+    VK_F10,         ID_RECORD_ADDRESS,      VIRTKEY, NOINVERT
+    VK_F2,          ID_PRIV_DECLARE,        VIRTKEY, NOINVERT
+    VK_F3,          ID_PRIV_WARRANT,        VIRTKEY, NOINVERT
+    VK_F4,          ID_PRIV_REPLICA,        VIRTKEY, NOINVERT
+    VK_F5,          ID_RECORD_FIND,         VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О программе"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    CTEXT           "Комитет имущественных отношений г. Мурманска\n \nПриватизация жилищного фонда Версия 2.0",
+                    IDC_STATIC,40,10,119,52,SS_NOPREFIX
+    CTEXT           "Andrey.Kourinsky@gmail.com  Copyright (C) 2010",
+                    IDC_STATIC,21,67,191,8
+    DEFPUSHBUTTON   "OK",IDOK,178,31,50,14,WS_GROUP
+END
+
+IDD_PRIVATISATION_FORM DIALOGEX 0, 0, 415, 273
+STYLE WS_CHILD | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Регистрация в департаменте",IDC_STATIC,289,1,122,54,
+                    BS_RIGHT,WS_EX_TRANSPARENT
+    GROUPBOX        "Приватизация",IDC_STATIC,2,1,284,54,BS_CENTER,
+                    WS_EX_TRANSPARENT
+    CTEXT           "Часть квартиры",IDC_STATIC,10,10,135,8
+    EDITTEXT        IDC_FLAT_PART,10,18,135,12,ES_AUTOHSCROLL
+    CTEXT           "Дополнительные квартиры",IDC_STATIC,10,31,135,8
+    EDITTEXT        IDC_ADDFLAT,10,40,135,12,ES_AUTOHSCROLL
+    CTEXT           "Комнат",IDC_STATIC,149,10,57,8
+    EDITTEXT        IDC_PRIVROOMS,149,18,57,12,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "Площадь",IDC_STATIC,149,31,57,8
+    EDITTEXT        IDC_PRIVSQR,149,40,57,12,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "Вид квартиры",IDC_STATIC,211,10,65,8
+    COMBOBOX        IDC_FLATTYPE,211,18,70,52,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_TABSTOP
+    CTEXT           "Вид собственности",IDC_STATIC,211,31,65,8
+    COMBOBOX        IDC_PROPERTYTYPE,211,40,70,48,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_TABSTOP
+    LTEXT           "Номер",IDC_STATIC,293,14,24,8
+    CONTROL         "",IDC_REGDEP,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    0x0,322,14,82,12
+    LTEXT           "Дата",IDC_STATIC,294,36,24,8
+    CONTROL         "",IDC_DEPDATE,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    0x0,322,34,46,12
+    PUSHBUTTON      "",IDC_CAL,371,33,13,13,BS_ICON | BS_CENTER | BS_VCENTER | 
+                    NOT WS_TABSTOP
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",0x0,2,58,408,160,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Комментарии к договору",IDC_COMMENTS_TEXT,2,219,409,45,
+                    BS_CENTER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_COMMENTS,8,228,397,32,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_SEARCH DIALOG DISCARDABLE  0, 0, 416, 238
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Найти договор"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Найти",IDOK,359,7,50,14
+    PUSHBUTTON      "Закрыть",IDCANCEL,359,58,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Новый",IDC_NEW,359,24,50,14
+    PUSHBUTTON      "Очистить",IDC_CLEAN,359,41,50,14
+    GROUPBOX        "Адрес",IDC_STATIC,7,7,125,65
+    GROUPBOX        "Владелец",IDC_STATIC,134,7,162,65
+    GROUPBOX        "Договор",IDC_STATIC,297,7,57,65
+    CONTROL         "",IDC_LIST,"{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",
+                    WS_TABSTOP,7,76,402,132
+    LTEXT           "Улица",IDC_STATIC,13,18,24,8
+    LTEXT           "Дом",IDC_STATIC,13,36,18,8
+    LTEXT           "Квартира",IDC_STATIC,13,54,35,8
+    LTEXT           "Фамилия",IDC_STATIC,141,18,36,8
+    LTEXT           "Имя",IDC_STATIC,141,36,16,8
+    LTEXT           "Отчество",IDC_STATIC,141,54,34,8
+    LTEXT           "Номер",IDC_STATIC,315,17,25,8
+    LTEXT           "Книга",IDC_STATIC,315,40,22,8
+    COMBOBOX        IDC_STREET,37,15,93,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_BUILDING,37,34,23,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_PART,98,34,32,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "корпус",IDC_STATIC,68,36,25,8
+    EDITTEXT        IDC_FLATNUM,68,52,23,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_FAMILY,182,15,109,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,182,34,109,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURNAME,182,52,109,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUM,303,27,46,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_BOOK,303,51,46,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Static",IDC_INFO,7,213,342,8
+    PUSHBUTTON      "Выгрузить",IDC_EXPORT,359,217,50,14
+END
+
+IDD_DTP DIALOGEX 0, 0, 109, 100
+STYLE DS_CONTROL | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "MonthCalendar1",IDC_CALENDAR,"SysMonthCal32",0x0,0,0,
+                    109,100
+END
+
+IDD_DECLARE DIALOGEX 0, 0, 403, 141
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Владельцы",IDC_STATIC,0,1,402,75,BS_RIGHT,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Отказники",IDC_STATIC,0,79,402,61,BS_RIGHT,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "-",IDC_OWNER_REMOVE,386,58,13,13,BS_ICON | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "+",IDC_OWNER_ADD,386,12,13,13,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "-",IDC_REFUSER_REMOVE,386,124,13,13,BS_ICON | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "+",IDC_REFUSER_ADD,386,89,13,13,BS_ICON | NOT 
+                    WS_TABSTOP
+    CONTROL         "",IDC_OWNERS,"{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",
+                    WS_TABSTOP,5,12,378,59
+    CONTROL         "",IDC_REFUSERS,"{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",
+                    WS_TABSTOP,5,90,378,47
+    EDITTEXT        IDC_TMPEDIT,30,75,30,8,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "",IDC_TMPDATE,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    NOT WS_VISIBLE,255,73,41,9
+    PUSHBUTTON      "",IDC_TMPDATE_B,305,72,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_VISIBLE | NOT WS_TABSTOP
+END
+
+IDD_CONTRACT DIALOGEX 0, 0, 403, 141
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Квартира",IDC_STATIC,0,0,88,89
+    GROUPBOX        "Дом",IDC_STATIC,90,0,75,120,BS_RIGHT,WS_EX_TRANSPARENT
+    GROUPBOX        "Участок",IDC_STATIC,168,0,77,120,BS_RIGHT,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Регистрация",IDC_STATIC,248,0,75,120,BS_RIGHT,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Акт",IDC_STATIC,326,0,75,120,BS_RIGHT,WS_EX_TRANSPARENT
+    LTEXT           "Комнат",IDC_STATIC,5,12,29,8
+    LTEXT           "Общая площадь",IDC_STATIC,5,23,32,18
+    LTEXT           "Жилая площадь",IDC_STATIC,5,42,31,18
+    LTEXT           "Стоимость",IDC_STATIC,22,63,39,8
+    LTEXT           "Балансодержатель",IDC_STATIC,13,125,68,12,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "",IDC_BH_B,383,124,13,13,BS_ICON
+    EDITTEXT        IDC_BH,90,125,290,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_ROOM_QUANT,41,10,41,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_FULL_SQR,41,26,41,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIVE_SQR,41,45,41,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BUILDING_SQR,95,22,65,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BUILDING_COST,95,74,65,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_COEF,95,102,65,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOT_NUM,173,22,65,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_LOT,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    WS_TABSTOP,173,102,47,12
+    EDITTEXT        IDC_FLAT_COST,5,74,77,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_REG,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    WS_TABSTOP,253,22,47,12
+    CONTROL         "",IDC_DATE_CANCEL,
+                    "{C932BA85-4374-101B-A56C-00AA003668DC}",0x0,17,102,47,
+                    12
+    CONTROL         "",IDC_DATE_RECORD,
+                    "{C932BA85-4374-101B-A56C-00AA003668DC}",WS_TABSTOP,253,
+                    48,47,12
+    EDITTEXT        IDC_REG_NUM,253,74,65,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOOK_NUM,253,102,65,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NORM,331,22,65,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PAYMENT,331,48,65,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_ACT,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    WS_TABSTOP,331,74,47,12
+    COMBOBOX        IDC_TRANS,331,102,65,41,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Площадь",IDC_STATIC,95,11,68,8
+    CTEXT           "Дата постройки",IDC_STATIC,95,37,68,8
+    CTEXT           "Стоимость",IDC_STATIC,95,63,68,8
+    CTEXT           "Коэффициент",IDC_STATIC,95,89,68,8
+    CTEXT           "Участок",IDC_STATIC,172,11,68,8
+    CTEXT           "Доля жилой площади",IDC_STATIC,169,37,74,8
+    CTEXT           "Стоимость",IDC_STATIC,172,63,68,8
+    CTEXT           "Дата заключения",IDC_STATIC,172,89,68,8
+    CTEXT           "Дата регистрации",IDC_STATIC,252,11,68,8
+    CTEXT           "Дата ввода",IDC_STATIC,252,37,68,8
+    CTEXT           "Номер регистрации",IDC_STATIC,252,63,68,8
+    CTEXT           "Номер книги",IDC_STATIC,252,89,68,8
+    CTEXT           "Норматив",IDC_STATIC,327,11,68,8
+    CTEXT           "Оплата",IDC_STATIC,327,37,68,8
+    CTEXT           "Дата акта",IDC_STATIC,327,63,68,8
+    CTEXT           "Условия передачи",IDC_STATIC,327,89,68,8
+    CONTROL         "",IDC_DATE_BUILT,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    WS_TABSTOP,95,48,47,12
+    PUSHBUTTON      "",IDC_DATE_BUILT_B,147,47,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    EDITTEXT        IDC_SHARE_SQR,173,48,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_LOT_COST,173,74,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_DATE_LOT_B,225,101,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_DATE_REG_B,305,21,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_DATE_RECORD_B,305,47,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_DATE_ACT_B,383,73,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    GROUPBOX        "Дата расторжения",IDC_STATIC,0,91,88,29,0,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_DATE_CANCEL_B,69,101,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+END
+
+IDD_REPLICA DIALOGEX 0, 0, 403, 141
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Выданы дубликаты",IDC_STATIC,1,2,193,137,BS_RIGHT,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "-",IDC_REMOVE,23,10,13,13,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "+",IDC_ADD,6,10,13,13,BS_ICON | NOT WS_TABSTOP
+    GROUPBOX        "Комментарии к дубликату",IDC_INFO,198,2,203,137,
+                    BS_RIGHT,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_COMMENTS,206,14,190,120,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | 
+                    WS_VSCROLL
+    CONTROL         "",IDC_DATA,"{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",
+                    WS_TABSTOP,5,27,184,107
+    CONTROL         "",IDC_TMPDATE,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    NOT WS_VISIBLE,271,6,41,9
+    PUSHBUTTON      "",IDC_TMPDATE_B,321,4,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_VISIBLE | NOT WS_TABSTOP
+END
+
+IDD_WARRANT DIALOG DISCARDABLE  0, 0, 403, 141
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",TCS_BOTTOM,145,1,256,
+                    138
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASLINES | 
+                    TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_INFOTIP | 
+                    TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,3,20,140,118
+    LTEXT           "Иерархия доверителей",IDC_STATIC,4,2,79,9
+    PUSHBUTTON      "-",IDC_PERSON_REMOVE,130,6,13,13,BS_ICON | NOT 
+                    WS_TABSTOP
+END
+
+IDD_WRNT_PEOPLE DIALOG DISCARDABLE  0, 0, 249, 119
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Владельцы",IDC_STATIC,0,27,248,50
+    GROUPBOX        "Отказники",IDC_STATIC,0,77,248,41
+    CTEXT           "Фамилия",IDC_STATIC,3,2,74,8
+    CTEXT           "Имя",IDC_STATIC,79,2,74,8
+    CTEXT           "Отчество",IDC_STATIC,155,1,74,8
+    PUSHBUTTON      "R",IDC_FREE_ROOT,232,2,13,13,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "C",IDC_FREE_CURRENT,232,16,13,13,BS_ICON | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_FAMILY,3,10,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,79,10,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURNAME,155,10,74,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_OWNERS,3,36,226,37,NOT LBS_NOTIFY | LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_REFUSERS,3,86,226,28,NOT LBS_NOTIFY | LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "R",IDC_OWNER_ROOT,232,36,13,13,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "C",IDC_OWNER_CURRENT,232,60,13,13,BS_ICON | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "R",IDC_REFUSER_ROOT,232,86,13,13,BS_ICON | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "C",IDC_REFUSER_CURRENT,232,101,13,13,BS_ICON | NOT 
+                    WS_TABSTOP
+END
+
+IDD_WRNT_WRNT DIALOG DISCARDABLE  0, 0, 249, 119
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Список документов",IDC_STATIC,1,0,247,59
+    GROUPBOX        "выдан",IDC_STATIC,2,62,247,55
+    LISTBOX         IDC_LIST,7,20,235,33,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "+",IDC_ADD,195,6,13,13,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "-",IDC_REMOVE,212,6,13,13,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "&&",IDC_BIND,229,6,13,13,BS_ICON | NOT WS_TABSTOP
+    EDITTEXT        IDC_TEXT,7,73,235,38,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_WRNT_SETUP DIALOG DISCARDABLE  0, 0, 249, 119
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Статус",IDC_STATIC,1,0,75,42,BS_RIGHT
+    GROUPBOX        "Глагол",IDC_STATIC,83,0,85,42,BS_RIGHT
+    GROUPBOX        "С согласия",IDC_STATIC,173,0,75,42,BS_RIGHT
+    GROUPBOX        "Предварительный просмотр",IDC_STATIC,1,44,247,74,
+                    BS_CENTER
+    COMBOBOX        IDC_STATUS,4,12,67,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_VERB,89,12,76,29,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "От своего имени",IDC_INTHENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,89,30,74,8
+    COMBOBOX        IDC_AGREEMENT,178,12,68,28,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PREVIEW,6,54,238,59,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+IDD_BH DIALOG DISCARDABLE  0, 0, 490, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Балансодержатель"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Выбрать",IDOK,263,192,50,14
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    TVS_INFOTIP | WS_BORDER | WS_TABSTOP,7,7,251,199
+    EDITTEXT        IDC_NAME,263,16,220,22,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    LTEXT           "В лице",IDC_STATIC,263,42,25,8
+    EDITTEXT        IDC_CHIEF,263,52,220,22,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    LTEXT           "На основании",IDC_STATIC,263,78,49,8
+    LTEXT           "Подпись",IDC_STATIC,263,117,32,8
+    LTEXT           "Адрес",IDC_STATIC,263,155,24,8
+    EDITTEXT        IDC_GROUND,263,90,220,22,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_SIGN,263,127,220,22,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_ADDRESS,263,166,220,22,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    PUSHBUTTON      "+",IDC_ADD,386,193,13,13,BS_ICON
+    PUSHBUTTON      "-",IDC_REMOVE,404,193,13,13,BS_ICON
+    PUSHBUTTON      "S",IDC_SAVE,470,193,13,13,BS_ICON
+    LTEXT           "Название",IDC_STATIC,263,7,34,8
+END
+
+IDD_ADDRESS DIALOG DISCARDABLE  0, 0, 143, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Изменить адрес"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,90,50,14
+    PUSHBUTTON      "Закрыть",IDCANCEL,86,90,50,14
+    LTEXT           "Улица",IDC_STATIC,7,7,32,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_STREET,43,7,93,15,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Дом",IDC_STATIC,7,25,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BUILDING,43,26,47,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Корпус",IDC_STATIC,7,46,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PART,43,45,47,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Квартира",IDC_STAT1,7,63,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_FLAT,43,62,47,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_PERIOD_DISTRICT DIALOG DISCARDABLE  0, 0, 160, 80
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Период/Округ"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,59,50,14
+    PUSHBUTTON      "Закрыть",IDCANCEL,103,59,50,14
+    CONTROL         "",IDC_BEGIN,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    WS_TABSTOP,7,19,47,12
+    PUSHBUTTON      "",IDC_BEGIN_B,57,18,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    CONTROL         "",IDC_END,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    WS_TABSTOP,90,19,47,12
+    PUSHBUTTON      "",IDC_END_B,140,18,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    CTEXT           "Начало",IDC_STATIC,7,7,47,8
+    CTEXT           "Конец",IDC_STATIC,90,7,47,8
+    LTEXT           "Округ",IDC_STATIC,23,38,30,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_DISTRICT,61,38,75,64,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PERIOD DIALOG DISCARDABLE  0, 0, 160, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Период"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,36,50,14
+    PUSHBUTTON      "Закрыть",IDCANCEL,103,36,50,14
+    CONTROL         "",IDC_BEGIN,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    WS_TABSTOP,7,19,47,12
+    PUSHBUTTON      "",IDC_BEGIN_B,57,18,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    CONTROL         "",IDC_END,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    WS_TABSTOP,90,19,47,12
+    PUSHBUTTON      "",IDC_END_B,140,18,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    CTEXT           "Начало",-1,7,7,47,8
+    CTEXT           "Конец",-1,90,7,47,8
+END
+
+IDD_ADDRESS_FILTER DIALOG DISCARDABLE  0, 0, 334, 121
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Фильтр по адресам"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,216,100,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,277,100,50,14
+    LTEXT           "Улица",IDC_STATIC,7,7,32,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_STREET,43,7,93,69,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Дом",IDC_STATIC,7,25,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BUILDING,43,26,47,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Корпус",IDC_STATIC,7,46,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PART,43,45,47,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Квартира",IDC_STATIC,7,63,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_FLAT,43,62,47,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Дополн.",IDC_STATIC,7,82,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EXTFLAT,43,82,93,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "+",IDC_ADD,43,101,13,13,BS_ICON
+    PUSHBUTTON      "-",IDC_REMOVE,63,101,13,13,BS_ICON
+    CONTROL         "",IDC_LIST,"{0ECD9B64-23AA-11D0-B351-00A0C9055D8E}",
+                    WS_TABSTOP,143,7,184,88
+END
+
+IDD_PERIOD_BH DIALOGEX 0, 0, 216, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Период/Балансодержатель"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,72,50,14
+    PUSHBUTTON      "Закрыть",IDCANCEL,159,72,50,14
+    CONTROL         "",IDC_BEGIN,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    WS_TABSTOP,42,19,47,12
+    PUSHBUTTON      "",IDC_BEGIN_B,92,18,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    CONTROL         "",IDC_END,"{C932BA85-4374-101B-A56C-00AA003668DC}",
+                    WS_TABSTOP,113,19,47,12
+    PUSHBUTTON      "",IDC_END_B,167,18,13,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | NOT WS_TABSTOP
+    CTEXT           "Начало",IDC_STATIC,42,7,47,8
+    CTEXT           "Конец",IDC_STATIC,113,7,47,8
+    COMBOBOX        IDC_BH,13,51,190,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Балансодержатель",IDC_STATIC,7,40,202,28,BS_CENTER,
+                    WS_EX_TRANSPARENT
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 138, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Авторизация"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,72,50,14
+    PUSHBUTTON      "Выйти",IDCANCEL,81,72,50,14
+    GROUPBOX        "Пользователь",IDC_STATIC,7,7,124,29,BS_CENTER
+    GROUPBOX        "Пароль",IDC_STATIC,7,39,124,29,BS_CENTER
+    COMBOBOX        IDC_LOGIN,15,17,109,43,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PASSWORD,15,49,109,12,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_REPLIST DIALOG DISCARDABLE  0, 0, 134, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выберите дубликат"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,77,7,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,77,24,50,14
+    LISTBOX         IDC_LIST,7,7,66,45,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_USERSETUP DIALOG DISCARDABLE  0, 0, 231, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Настройка пользователя"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Сохранить",IDOK,23,161,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,157,161,50,14
+    CTEXT           "Static",IDC_USER,7,7,217,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_SIGN1,7,26,217,57,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Выдача дубликата",IDC_STATIC,7,16,67,8
+    EDITTEXT        IDC_SIGN2,7,98,217,57,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Подпись",IDC_STATIC,7,87,67,8
+END
+
+IDD_NEWADDRESS DIALOG DISCARDABLE  0, 0, 186, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Новый адрес"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Добавить",IDOK,129,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,71,50,14
+    LTEXT           "Округ",IDC_STATIC,7,7,32,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_DISTRICT,43,7,93,54,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Улица",IDC_STATIC,7,26,32,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_STREET,43,26,93,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Дом",IDC_STATIC,7,44,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_BUILDING,43,45,47,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Корпус",IDC_STATIC,7,64,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PART,43,63,47,12,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_INFO DIALOGEX 0, 0, 186, 65
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Static",IDC_INFO,13,17,160,41
+    GROUPBOX        "",IDC_STATIC,7,7,172,51,0,WS_EX_TRANSPARENT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "privatisation MFC Application\0"
+            VALUE "FileVersion", "2, 0, 0, 1\0"
+            VALUE "InternalName", "privatisation\0"
+            VALUE "LegalCopyright", "Copyright (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "privzhf.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "privatisation Application\0"
+            VALUE "ProductVersion", "2, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_PRIVATISATION_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 411
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_CONTRACT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 402
+    END
+
+    IDD_BH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 483
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_ADDRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_PERIOD_DISTRICT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_PERIOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_ADDRESS_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_PERIOD_BH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_REPLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_USERSETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_NEWADDRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SEARCH DLGINIT
+BEGIN
+    IDC_LIST, 0x37a, 468, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x3e52, 0x0000, 0x1639, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xffff, 0x00ff, 0x0008, 0x8000, 0xe0da, 0x00ef, 0x0000, 0x00a0, 
+0x000d, 0x8000, 0xffff, 0x0000, 0x8080, 0x0080, 0x000f, 0x8000, 0xc0c0, 
+0x00c0, 0x0000, 0x0000, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0002, 0x0000, 0x0002, 
+0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0001, 0x0000, 0x0100, 0x0101, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0xcc01, 0x0000, 
+0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 
+0x6669, 0x0001, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 
+0x51b8, 0xcc01, 0x0400, 0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 
+0x736e, 0x5320, 0x7265, 0x6669, 0x0000, 0x0000, 0x5204, 0x0be3, 0x8f91, 
+0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
+
+    0
+END
+
+IDD_PRIVATISATION_FORM DLGINIT
+BEGIN
+    IDC_REGDEP, 0x37a, 183, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0xb600, 0x000c, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0x0500, 0x0000, 0x0880, 0x0000, 0xff80, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x0000, 0x0000, 0x0200, 
+0x2a00, "\000" 
+    IDC_DEPDATE, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x2200, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    0
+END
+
+IDD_DECLARE DLGINIT
+BEGIN
+    IDC_OWNERS, 0x37a, 464, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x3a9a, 0x0000, 0x09ec, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xffff, 0x00ff, 0x0008, 0x8000, 0xe0da, 0x00ef, 0x0000, 0x00a0, 
+0x000d, 0x8000, 0xffff, 0x0000, 0x8080, 0x0080, 0x000f, 0x8000, 0xc0c0, 
+0x00c0, 0x0000, 0x0000, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0001, 0x0002, 0x0000, 0x0002, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0001, 0x0000, 0x0100, 0x0101, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 0x0be3, 0x8f91, 
+0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0xcc01, 0x0000, 0x0190, 0x4244, 
+0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 0x6669, 0x0001, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0xcc01, 
+0x0400, 0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 
+0x7265, 0x6669, 0x0000, 0x0000, 0x5204, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
+    IDC_REFUSERS, 0x37a, 464, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x3a9a, 0x0000, 0x07db, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xffff, 0x00ff, 0x0008, 0x8000, 0xe0da, 0x00ef, 0x0000, 0x00a0, 
+0x000d, 0x8000, 0xffff, 0x0000, 0x8080, 0x0080, 0x000f, 0x8000, 0xc0c0, 
+0x00c0, 0x0000, 0x0000, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0001, 0x0002, 0x0000, 0x0002, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0001, 0x0000, 0x0100, 0x0101, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 0x0be3, 0x8f91, 
+0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0xcc01, 0x0000, 0x0190, 0x4244, 
+0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 0x6669, 0x0001, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0xcc01, 
+0x0400, 0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 
+0x7265, 0x6669, 0x0000, 0x0000, 0x5204, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
+    IDC_TMPDATE, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x6800, 0x0006, 0x8d00, 0x0001, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0x0000, 0xff00, 
+0x00ff, 0x0000, 0xff00, 0x00ff, 0x0000, 0x0a00, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    0
+END
+
+IDD_WRNT_SETUP DLGINIT
+BEGIN
+    IDC_VERB, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_CONTRACT DLGINIT
+BEGIN
+    IDC_DATE_LOT, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    IDC_DATE_REG, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    IDC_DATE_CANCEL, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    IDC_DATE_RECORD, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    IDC_DATE_ACT, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    IDC_DATE_BUILT, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    0
+END
+
+IDD_REPLICA DLGINIT
+BEGIN
+    IDC_DATA, 0x37a, 464, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x1c87, 0x0000, 0x11fc, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0001, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xffff, 0x00ff, 0x0008, 0x8000, 0xe0da, 0x00ef, 0x0000, 0x00a0, 
+0x000d, 0x8000, 0xffff, 0x0000, 0x8080, 0x0080, 0x000f, 0x8000, 0xc0c0, 
+0x00c0, 0x0000, 0x0000, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0001, 0x0002, 0x0000, 0x0002, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0001, 0x0000, 0x0101, 0x0100, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 0x0be3, 0x8f91, 
+0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0xcc01, 0x0000, 0x0190, 0x4244, 
+0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 0x6669, 0x0001, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0xcc01, 
+0x0000, 0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 
+0x7265, 0x6669, 0x0000, 0x0000, 0x5204, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
+    IDC_TMPDATE, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x6800, 0x0006, 0x8d00, 0x0001, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0x0000, 0xff00, 
+0x00ff, 0x0000, 0xff00, 0x00ff, 0x0000, 0x0a00, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    0
+END
+
+IDD_PERIOD_DISTRICT DLGINIT
+BEGIN
+    IDC_BEGIN, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    IDC_END, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    IDC_DISTRICT, 0x403, 13, 0
+0xe5ef, 0xe2f0, 0xecee, 0xe9e0, 0xeaf1, 0xe9e8, "\000" 
+    0
+END
+
+IDD_PERIOD DLGINIT
+BEGIN
+    IDC_BEGIN, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    IDC_END, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    0
+END
+
+IDD_ADDRESS_FILTER DLGINIT
+BEGIN
+    IDC_LIST, 0x37a, 468, 0
+0x0024, 0x0000, 0x0031, 0x0046, 0x0033, 0x0044, 0x0035, 0x0035, 0x0032, 
+0x0032, 0x002d, 0x0033, 0x0046, 0x0034, 0x0032, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0032, 0x0046, 0x0041, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0038, 0x0046, 0x0042, 
+0x0035, 0x0035, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x1c87, 0x0000, 0x0ec8, 
+0x0000, 0x6f42, 0x506f, 0x0006, 0x0000, 0x008c, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xffff, 0x00ff, 0x0008, 0x8000, 0xe0da, 0x00ef, 0x0000, 0x00a0, 
+0x000d, 0x8000, 0xffff, 0x0000, 0x8080, 0x0080, 0x000f, 0x8000, 0xc0c0, 
+0x00c0, 0x0000, 0x0000, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 0xbf80, 
+0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0002, 0x0000, 0x0002, 
+0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0xffff, 
+0x0001, 0x0001, 0x0000, 0x0100, 0x0101, 0x0001, 0x0004, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0048, 0x0000, 0xffff, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0x0012, 0x8000, 0xffff, 0xffff, 
+0xffff, 0xffff, 0xc0c0, 0x00c0, 0x0000, 0xbf80, 0x0000, 0xbf80, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0xffff, 0xffff, 0x0000, 0xffff, 
+0xffff, 0xffff, 0xffff, 0xffff, 0x0000, 0x0001, 0x0000, 0x0000, 0xffff, 
+0xffff, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x5203, 
+0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0xcc01, 0x0000, 
+0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 0x736e, 0x5320, 0x7265, 
+0x6669, 0x0001, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 
+0x51b8, 0xcc01, 0x0400, 0x0190, 0x4244, 0x0001, 0x4d0d, 0x2053, 0x6153, 
+0x736e, 0x5320, 0x7265, 0x6669, 0x0000, 0x0000, 0x5204, 0x0be3, 0x8f91, 
+0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
+
+    0
+END
+
+IDD_PERIOD_BH DLGINIT
+BEGIN
+    IDC_BEGIN, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    IDC_END, 0x37a, 223, 0
+0x0024, 0x0000, 0x006d, 0x0067, 0x006b, 0x0067, 0x0074, 0x0067, 0x006e, 
+0x006e, 0x006d, 0x006e, 0x006d, 0x006e, 0x0069, 0x006e, 0x0069, 0x0067, 
+0x0074, 0x0068, 0x006b, 0x0067, 0x006f, 0x0067, 0x0067, 0x0067, 0x0076, 
+0x006d, 0x006b, 0x0068, 0x0069, 0x006e, 0x006a, 0x0067, 0x0067, 0x006e, 
+0x0076, 0x006d, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0016, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x5700, 0x0007, 0x1100, 0x0002, 
+0xed00, 0xedac, 0x00ac, 0x0600, 0x2400, 0x0000, 0x0100, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0xff00, 0xb9ff, 0x0000, 0xff00, 0xff00, 0x00ff, 
+0x0000, 0xff00, 0xffff, 0x00ff, 0x0000, 0x4000, 0x1400, 0x6400, 0x6400, 
+0x2d00, 0x6d00, 0x6d00, 0x2d00, 0x7900, 0x7900, 0x7900, 0x7900, 0x1400, 
+0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2d00, 0x2300, 0x2300, 0x2300, 
+0x2300, 0x0200, 0x2a00, "\000" 
+    IDC_BH, 0x403, 13, 0
+0xe5ef, 0xe2f0, 0xecee, 0xe9e0, 0xeaf1, 0xe9e8, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Приватизация"
+    IDR_PRIVATTYPE          "\nПриватизация\nПриватизация\n\n\nPrivatisation.Document\nPrivat Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Приватизация"
+    AFX_IDS_IDLEMESSAGE     "Готов"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Открыть последний договор\nПоследний договор"
+    ID_FILE_OPEN            "Открыть последний договор\nПоследний договор"
+    ID_FILE_CLOSE           "Закрыть текущий договор без сохранения\nЗакрыть договор"
+    ID_FILE_SAVE            "Сохранить изменения в договоре\nСохранить договор"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Отображает информацию о программе, версию и авторские права\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RECORD_FIND          "Поиск договора по данным\nНайти договор"
+    ID_WINDOW_CLOSEALL      "Закрыть все окна\nЗакрыть все договоры"
+    ID_CONTRACT_SAVE        "Сохранить изменения в договоре\nСохранить договор"
+    ID_CONTRACT_DELETE      "Удалить текущий договор\nУдалить договор"
+    ID_CONTRACT_ADDRESS     "Редактировать адрес в договоре\nИзменить адрес "
+    ID_CONTRACT_CLOSE       "Закрыть текущий договор без сохранения\nЗакрыть договор"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\privatisation.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
